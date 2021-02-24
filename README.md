@@ -27,7 +27,7 @@ The first analysis is to looking at the relationship between the launch date and
 
     Final PIVOT Table:
 
-    ![screenshot2](https://user-images.githubusercontent.com/79289806/108928784-c0bb8080-7610-11eb-9212-e9cf29aee841.png)
+    ![screenshot2](https://user-images.githubusercontent.com/79289806/108938802-b6a07e80-761e-11eb-81af-828c526246df.png)
  
 5.	Based on the PIVOT table created from step4, created a line chart which has the month of launch date as the X-axis and the number of outcomes as the Y-axis.
 6.	In the initial line chart that created based on the PIVOT table, the filters were included in the chart. Right click the filters, and select "Hide Report Filter Buttons on Chart" to hide the filters.

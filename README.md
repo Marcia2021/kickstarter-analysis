@@ -41,7 +41,7 @@ The first analysis is to looking at the relationship between the launch date and
 This analysis is looking at the relationship between the goals for the fundraising campaign and the outcomes.
 1.	Created a table frame in a new sheet that has 8 columns. The first column “Goal” contains 12 categories. The other 7 columns will be calculated based on the criteria of each categories in the “Goal” column.
 2.	Based on the number range in each category in the “Goal” column, filtered the Kickstarter data to  “Subcategory” equals to “plays”, then use the value from the “goal” column in the Kickstarter sheet to count the number of successful, failed and canceled in column B, C and D respectively. Used COUNTIFS() function to calculate the numbers.
-3.	
+	
     Example:
     
     ![screenshot4](https://user-images.githubusercontent.com/79289806/108928777-c022ea00-7610-11eb-84b3-98580a0ed9a9.png)

@@ -64,14 +64,14 @@ This analysis is looking at the relationship between the goals for the fundraisi
     Final table:
     ![screenshot8](https://user-images.githubusercontent.com/79289806/108928781-c022ea00-7610-11eb-9db4-b032cf79a338.png)
  
-5.	Based on the final table created in step4, created a line chart, with each categories of the Goal column as X-axis, percentage of outcomes as the Y-axis.
+5.	Based on the final table created in step4, created a line chart, with each categories of the Goal column as the X-axis, the percentage of outcomes as the Y-axis.
 
     ![screenshot9](https://user-images.githubusercontent.com/79289806/108928782-c022ea00-7610-11eb-8f9a-befe5fea909e.png)
 
  
 ### Challenges and Difficulties Encountered
 1.	The UNIX time stamp format of the launch date stored the seconds instead of actual date. Need to use function to convert it to readable date value. The function will convert the seconds to days and adding the date value for January 1st, 1970, which is the “Unix Epoch”.
-2.	In the Analysis of Outcomes Based on Goals, the calculate 
+2.	In the Analysis of Outcomes Based on Goals, the PIVOT table will be used to create a line chart. When calculate the percentage, I multiplied the value by 100 and round to 2 decimal places. In this way, when creating the line chart, the Y-axis will not be able to show up as percent with % at then end. I kept the raw value from the percentage calculation, then use "percentage" as the data format for the Y-axis to present as actual percent value.
 
 ## Results
 - What are two conclusions you can draw about the Outcomes based on Launch Date?

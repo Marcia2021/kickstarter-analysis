@@ -10,32 +10,36 @@ fundraising campaign.
 As Louise’s play Fever came close to its fundraising goal soon, we are going to analyze the Kickstarter
 data to help Louise better understand the relationship between launch date or funding goals and the
 fundraising campaign outcomes. This analysis will help Louise to gather additional information to
-success fundraising campaign. 
+success in fundraising campaign. 
 
 ## Analysis and Challenges
 ### Analysis of Outcomes Based on Launch Date
+The first analysis is to looking at the relationship between the launch date and the outcomes of the fundraising campaign. 
 1.	The launch date in the original Kickstarter dataset was in UNIX timestamp format. Used the following function to convert it to a readable format:
 
     ![screenshot1](https://user-images.githubusercontent.com/79289806/108928628-79cd8b00-7610-11eb-8b3e-49d0845ddd6c.png)
     
-    where J* indicates each cell in column J (launched_at).
+    where J* indicates each cell in column J (launched_at) in the Kickstarter data sheet.
  
-2.	Used YEAR() function to get the year the converted launch dates.
-3.	Created pivot table “Theater Outcomes Based on Launch Date”, which has "Parent Category" and "Year" as the filters, the months of launch date as the rows, and outcomes as the columns. There are four outcomes: “successful”, ”failed”, “canceled” and “live”. Filtered the outcomes to hide the outcome “live”. In addition, filtered the "Parent Category" to "theater".
+2.	Used YEAR() function to get the year from the converted launch dates in Step1.
+3.	Created PIVOT table “Theater Outcomes Based on Launch Date”, which has "Parent Category" and "Year" as the filters, the months of launch date as the rows, and outcomes as the columns. There are four outcomes: “successful”, ”failed”, “canceled” and “live”. Filtered the outcomes to hide the outcome “live”. In addition, filtered the "Parent Category" to "theater".
 4.	Sorted the data by the number of outcomes in descending order for each month to made outcome “successful” to be the first column.
-Final PIVOT Table:
+
+    Final PIVOT Table:
 
     ![screenshot2](https://user-images.githubusercontent.com/79289806/108928784-c0bb8080-7610-11eb-9212-e9cf29aee841.png)
  
-5.	Based on the pivot table created from step4, created a line chart which has the month of launch date as X-axis and the number of outcomes in Y-axis.
-6.	In the initial line chart that created based on the pivot table, the filters were included in the chart. Right click the filters, and select "Hide Report Filter Buttons on Chart" to hide the filters.
-Final Line Chart:
+5.	Based on the PIVOT table created from step4, created a line chart which has the month of launch date as the X-axis and the number of outcomes as the Y-axis.
+6.	In the initial line chart that created based on the PIVOT table, the filters were included in the chart. Right click the filters, and select "Hide Report Filter Buttons on Chart" to hide the filters.
+
+    Final Line Chart:
 
     ![screenshot3](https://user-images.githubusercontent.com/79289806/108928785-c0bb8080-7610-11eb-9f99-faf4424fc9f5.png)
 
  
 ### Analysis of Outcomes Based on Goals
-1.	Created a table frame in a new sheet that has 8 columns. The first column “Goal” contains 12 categories. The other 7 columns will be calculated based on the criteria of each categories in the first “Goal” column.
+This analysis is looking at the relationship between the goals for the fundraising campaign and the outcomes.
+1.	Created a table frame in a new sheet that has 8 columns. The first column “Goal” contains 12 categories. The other 7 columns will be calculated based on the criteria of each categories in the “Goal” column.
 2.	Based on the number range in each category in the “Goal” column, filtered the Kickstarter data to  “Subcategory” equals to “plays”, then use the value from the “goal” column in the Kickstarter sheet to count the number of successful, failed and canceled in column B, C and D respectively. Used COUNTIFS() function to calculate the numbers.
 3.	
     Example:

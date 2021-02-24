@@ -16,6 +16,7 @@ success fundraising campaign.
 1.	The launch date in the original Kickstarter dataset was in UNIX timestamp format. Used the following function to convert it to a readable format:
     
  where J* indicates each cell in column J (launched_at).
+ 
 2.	Used YEAR() function to get the year the converted launch dates.
 3.	Created pivot table “Theater Outcomes Based on Launch Date”, which has "Parent Category" and "Year" as the filters, the months of launch date as the rows, and outcomes as the columns. There are four outcomes: “successful”, ”failed”, “canceled” and “live”. Filtered the outcomes to hide the outcome “live”. In addition, filtered the "Parent Category" to "theater".
 4.	Sorted the data by the number of outcomes in descending order for each month to made outcome “successful” to be the first column.
@@ -24,6 +25,8 @@ Final PIVOT Table:
 5.	Based on the pivot table created from step4, created a line chart which has the month of launch date as X-axis and the number of outcomes in Y-axis.
 6.	In the initial line chart that created based on the pivot table, the filters were included in the chart. Right click the filters, and select "Hide Report Filter Buttons on Chart" to hide the filters.
 Final Line Chart:
+
+
  
 ### Analysis of Outcomes Based on Goals
 1.	Created a table frame in a new sheet that has 8 columns. The first column “Goal” contains 12 categories. The other 7 columns will be calculated based on the criteria of each categories in the first “Goal” column.
@@ -34,8 +37,11 @@ Example:
 Where F indicates column F in the Kickstarter data sheet (outcomes).
 D indicates column D in the Kickstarter data sheet (goal).
 S indicates column S in the Kickstarter data sheet (Subcategory).
+
+
 3.	Summed the number of outcomes calculated in column B, C and D as "Total Projects" in column E.
 Ex:  
+
 4.	Used the number of outcomes in column B, C and D, and the "Total Projects" in column E to calculate the percentage for successful, failed and canceled in column F, G and H respectively.
 Ex:  
 Final table:

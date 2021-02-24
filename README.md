@@ -75,7 +75,7 @@ This analysis is looking at the relationship between the goals for the fundraisi
 
 ## Results
 - What are two conclusions you can draw about the Outcomes based on Launch Date?
-1.	Regardless of the year and country, May has the largest number of successful. This might because in most of the countries in the Kickstarter data, it is starting to get warm in the middle of the year, and people will be more interested in out-of-house activity. Watch a show or play might be one of the popular family friendly activity based on the Kickstarter data’s target population.
+1.	Regardless of the year and country, May and June have the largest number of successful. This might because in most of the countries in the Kickstarter data, it is starting to get warm in the middle of the year, and people will be more interested in out-of-house activity. Watch a show or play might be one of the popular family friendly activity based on the Kickstarter data’s target population.
 2.	Regardless of the year and country, in December there were similar number of successful and failed. This might because December is considered as in the holiday season, less people are interested in going to theater. 
 - What can you conclude about the Outcomes based on Goals?
 1.	There is no canceled outcomes for subcategory “plays” in the Kickstarter data.

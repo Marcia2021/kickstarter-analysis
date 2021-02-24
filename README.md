@@ -16,42 +16,54 @@ success fundraising campaign.
 ### Analysis of Outcomes Based on Launch Date
 1.	The launch date in the original Kickstarter dataset was in UNIX timestamp format. Used the following function to convert it to a readable format:
 
-![Screenshot](screenshot1.png)
+    ![screenshot1](https://user-images.githubusercontent.com/79289806/108928628-79cd8b00-7610-11eb-8b3e-49d0845ddd6c.png)
     
- where J* indicates each cell in column J (launched_at).
+    where J* indicates each cell in column J (launched_at).
  
 2.	Used YEAR() function to get the year the converted launch dates.
 3.	Created pivot table “Theater Outcomes Based on Launch Date”, which has "Parent Category" and "Year" as the filters, the months of launch date as the rows, and outcomes as the columns. There are four outcomes: “successful”, ”failed”, “canceled” and “live”. Filtered the outcomes to hide the outcome “live”. In addition, filtered the "Parent Category" to "theater".
 4.	Sorted the data by the number of outcomes in descending order for each month to made outcome “successful” to be the first column.
 Final PIVOT Table:
+
+    ![screenshot2](https://user-images.githubusercontent.com/79289806/108928784-c0bb8080-7610-11eb-9212-e9cf29aee841.png)
  
 5.	Based on the pivot table created from step4, created a line chart which has the month of launch date as X-axis and the number of outcomes in Y-axis.
 6.	In the initial line chart that created based on the pivot table, the filters were included in the chart. Right click the filters, and select "Hide Report Filter Buttons on Chart" to hide the filters.
 Final Line Chart:
 
+    ![screenshot3](https://user-images.githubusercontent.com/79289806/108928785-c0bb8080-7610-11eb-9f99-faf4424fc9f5.png)
 
  
 ### Analysis of Outcomes Based on Goals
 1.	Created a table frame in a new sheet that has 8 columns. The first column “Goal” contains 12 categories. The other 7 columns will be calculated based on the criteria of each categories in the first “Goal” column.
 2.	Based on the number range in each category in the “Goal” column, filtered the Kickstarter data to  “Subcategory” equals to “plays”, then use the value from the “goal” column in the Kickstarter sheet to count the number of successful, failed and canceled in column B, C and D respectively. Used COUNTIFS() function to calculate the numbers.
-Example:
-
+3.	
+    Example:
+    
+    ![screenshot4](https://user-images.githubusercontent.com/79289806/108928777-c022ea00-7610-11eb-84b3-98580a0ed9a9.png)
+    ![screenshot5](https://user-images.githubusercontent.com/79289806/108928778-c022ea00-7610-11eb-90c6-6af2ed553128.png)
  
-Where F indicates column F in the Kickstarter data sheet (outcomes).
+    Where F indicates column F in the Kickstarter data sheet (outcomes).
 
-D indicates column D in the Kickstarter data sheet (goal).
+    D indicates column D in the Kickstarter data sheet (goal).
 
-S indicates column S in the Kickstarter data sheet (Subcategory).
-
+    S indicates column S in the Kickstarter data sheet (Subcategory).
 
 3.	Summed the number of outcomes calculated in column B, C and D as "Total Projects" in column E.
-Ex:  
+
+    Ex:  ![screenshot6](https://user-images.githubusercontent.com/79289806/108928779-c022ea00-7610-11eb-8b25-892715417db9.png)
 
 4.	Used the number of outcomes in column B, C and D, and the "Total Projects" in column E to calculate the percentage for successful, failed and canceled in column F, G and H respectively.
-Ex:  
-Final table:
+
+    Ex:  ![screenshot7](https://user-images.githubusercontent.com/79289806/108928780-c022ea00-7610-11eb-9075-b00f36e64a74.png)
+    
+    Final table:
+    ![screenshot8](https://user-images.githubusercontent.com/79289806/108928781-c022ea00-7610-11eb-9db4-b032cf79a338.png)
  
 5.	Based on the final table created in step4, created a line chart, with each categories of the Goal column as X-axis, percentage of outcomes as the Y-axis.
+
+    ![screenshot9](https://user-images.githubusercontent.com/79289806/108928782-c022ea00-7610-11eb-8f9a-befe5fea909e.png)
+
  
 ### Challenges and Difficulties Encountered
 1.	The UNIX time stamp format of the launch date stored the seconds instead of actual date. Need to use function to convert it to readable date value. The function will convert the seconds to days and adding the date value for January 1st, 1970, which is the “Unix Epoch”.

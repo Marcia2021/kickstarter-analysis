@@ -6,6 +6,7 @@ different factors that will affect the successfulness of the fundraising campaig
 on different country and time period, the goal of fundraising might be affected by the timeline. A
 thorough data analysis will help the owner to have a reasonable expectation and make decision on the 
 fundraising campaign.
+
 As Louise’s play Fever came close to its fundraising goal soon, we are going to analyze the Kickstarter
 data to help Louise better understand the relationship between launch date or funding goals and the
 fundraising campaign outcomes. This analysis will help Louise to gather additional information to
@@ -32,10 +33,12 @@ Final Line Chart:
 1.	Created a table frame in a new sheet that has 8 columns. The first column “Goal” contains 12 categories. The other 7 columns will be calculated based on the criteria of each categories in the first “Goal” column.
 2.	Based on the number range in each category in the “Goal” column, filtered the Kickstarter data to  “Subcategory” equals to “plays”, then use the value from the “goal” column in the Kickstarter sheet to count the number of successful, failed and canceled in column B, C and D respectively. Used COUNTIFS() function to calculate the numbers.
 Example:
- 
+
  
 Where F indicates column F in the Kickstarter data sheet (outcomes).
+
 D indicates column D in the Kickstarter data sheet (goal).
+
 S indicates column S in the Kickstarter data sheet (Subcategory).
 
 

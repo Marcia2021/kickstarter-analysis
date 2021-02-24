@@ -85,7 +85,7 @@ This analysis is looking at the relationship between the goals for the fundraisi
   
   There are lots of factors that will affect the reliability of the data, which will further affect the analysis outputs. Depending on the different analysis     purpose, we might focus on different feather of the data. Here are some general limitations of the Kickstarter data.
 1.	In the Kickstarter data sheet, the values in the goal and pledged columns are in different currency. There is no standardized amount of month for both. When checking the outcomes based on the goal column, the output will be biased by the differences among each currency. 
-2.	There is no information of the actual strategy for each fundraising campaign. For example, the fundraising campaign was hold through social media, or used printed poster to be shown in public, or used combine strategies. The different strategy used throughout the fundraising campaign will affect the outcomes. 
+2.	There is no information of the actual strategy for each fundraising campaign. For example, the fundraising campaign was hold through social media, or used printed poster to be shown in public, or used combined strategies. The different strategy used throughout the fundraising campaign will affect the outcomes. 
 3.	The demographic information of the target population in the Kickstarter data is unclear. Age group, gender, race and other demographic information will also affect the outcomes of the fundraising campaign.  
 
 - What are some other possible tables and/or graphs that we could create?

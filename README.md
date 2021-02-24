@@ -78,7 +78,7 @@ This analysis is looking at the relationship between the goals for the fundraisi
 1.	Regardless of the year and country, May has the largest number of successful. This might because in most of the countries in the Kickstarter data, it is starting to get warm in the middle of the year, and people will be more interested in get out
 2.	Regardless of the year and country, in December there were similar number of successful and failed. This might because December is considered as in the holiday season, less people interested in going to theater. 
 - What can you conclude about the Outcomes based on Goals?
-1.	There is no canceled campaign for subcategory “plays”.
+1.	There is no canceled campaign for subcategory “plays” in the Kickstarter data.
 2.	For each categories of the Goal, the percentage of successful and failed sum up as 100%. In category “Less Than 1,000” to “25,000 to 29,000” the percentage of successful decreased, while the percentage of failed increased. Category “45,000 to 49,000” has the highest percentage of successful and the lowest percentage of failed. Although the percentage of failed decreased between “25,000 to 29,000” and 35,000 to 39,000”, the overall trend showed us that the higher the number of goals set up for the fundraising campaign, the higher possibility of failed.  
 - What are some limitations of this dataset?
 1.	In the Kickstarter data sheet, the values in the goal and pledged columns are in different currency. There is no standardized amount of money for both columns. When checking the relationship between the goals and outcomes, the output will be biased by the differences among each currency. 

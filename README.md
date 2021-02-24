@@ -15,6 +15,8 @@ success fundraising campaign.
 ## Analysis and Challenges
 ### Analysis of Outcomes Based on Launch Date
 1.	The launch date in the original Kickstarter dataset was in UNIX timestamp format. Used the following function to convert it to a readable format:
+
+![Screenshot](screenshot1.png)
     
  where J* indicates each cell in column J (launched_at).
  

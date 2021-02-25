@@ -21,8 +21,8 @@ The first analysis is to looking at the relationship between the launch date and
     
     where J* indicates each cell in column J (launched_at) in the Kickstarter data sheet.
  
-2.	Used YEAR() function to get the year from the converted launch dates in Step1.
-3.	Created PIVOT table “Theater Outcomes Based on Launch Date”, which has "Parent Category" and "Year" as the filters, the months of launch date as the rows, and outcomes as the columns. There are four outcomes: “successful”, ”failed”, “canceled” and “live”. Filtered the outcomes to hide the outcome “live”. In addition, filtered the "Parent Category" to "theater".
+2.	Used YEAR() function to get the years from the converted launch dates in Step1.
+3.	Created PIVOT table “Theater Outcomes Based on Launch Date”, which has "Parent Category" and "Years" as the filters, the months of launch date as the rows, and outcomes as the columns. There are four outcomes: “successful”, ”failed”, “canceled” and “live”. Filtered the outcomes to hide the outcome “live”. In addition, filtered the "Parent Category" to "theater".
 4.	Sorted the data by the number of outcomes in descending order for each month to made outcome “successful” to be the first column.
 
     Final PIVOT Table:
@@ -62,7 +62,7 @@ This analysis is looking at the relationship between the goals for the fundraisi
     Ex:  ![screenshot7](https://user-images.githubusercontent.com/79289806/108928780-c022ea00-7610-11eb-9075-b00f36e64a74.png)
     
     Final table:
-    ![screenshot8](https://user-images.githubusercontent.com/79289806/108928781-c022ea00-7610-11eb-9db4-b032cf79a338.png)
+   ![screenshot8](https://user-images.githubusercontent.com/79289806/109091116-30e60700-76e2-11eb-85d2-196e29bfd905.png)
  
 5.	Based on the final table created in step4, created a line chart, with each categories of the Goal column as the X-axis, the percentage of outcomes as the Y-axis.
 
@@ -75,19 +75,38 @@ This analysis is looking at the relationship between the goals for the fundraisi
 
 ## Results
 - What are two conclusions you can draw about the Outcomes based on Launch Date?
-1.	Regardless of the year and country, May and June have the largest number of successful. This might because in most of the countries in the Kickstarter data, it is starting to get warm in the middle of the year, and people will be more interested in out-of-house activity. Watch a show or play might be one of the popular family friendly activity based on the Kickstarter data’s target population.
-2.	Regardless of the year and country, in December there were similar number of successful and failed. This might because December is considered as in the holiday season, less people are interested in going to theater. 
+1.	Regardless of the year and country, May and June have the largest number of successful. When conducting fundraising campaign, these two months will have a higher possibility of success. This might because in most of the countries in the Kickstarter data, it is starting to get warm in the middle of the year, and people will be more interested in out-of-house activity. Watch a show or play might be one of the most popular family friendly activity based on the Kickstarter data’s target population.
+2.	Regardless of the year and country, the number of total fundraising campaigns decreased after June. December has the smallest number of successful compared to the other months. Additionally, the number of successful and failed are very close to each other in this month. Towards the end of the year, there are less fundraising campaign projects and has lower rate of successful, as this might related to other factors that didn’t included in this analysis. 
 - What can you conclude about the Outcomes based on Goals?
-1.	There is no canceled outcomes for subcategory “plays” in the Kickstarter data.
-2.	The Goal category "1,000 to 4,999" has the largest number of projects for "plays". Both number of sucessful and failed are the largest among all the categories. 
-3.	Among the categories “Less Than 1,000” and “25,000 to 29,000” the percentage of successful decreased, while the percentage of failed increased. Category “45,000 to 49,000” has the highest percentage of failed and the lowest percentage of successful because there is only one case of failed and no case fo successful in that category. Although the percentage of failed decreased between “25,000 to 29,000” and 35,000 to 39,000”, the overall trend showed us that the higher the number of goals set up for the fundraising campaign, the higher possibility of failed.
-4.	Although this particular analysis only focused on the relationship between goal and outcomes for “plays”, the line chart showed that their will be other factors that affect the outcomes along with the goal. For example, the type of the “plays”, or the actual location of the “plays” that planned to be shown might be one of the initial factors that decide the amount of money for the goal. This might explain the trend changes in the line chart. 
+1.	There are no canceled outcomes for subcategory “plays” in the Kickstarter data. This means among all the fundraising campaigns for “plays”, no matter it is successful or failed, all the campaigns were able to proceed as planned. 
+2.	The category "1,000 to 4,999" has the largest number of fundraising campaigns for "plays" across all the categories. In this category, the rate of successful is much higher than the rate of failed. This means among all the fundraising campaigns for “plays”, majority of the campaigns set the goal between 1,000 and 4,999 which leads to a higher possibility of success. This might depend on the size of the show and other factors which were not included in the Kickstarter data and this analysis.
+3.	Although this particular analysis only focused on the relationship between goal and outcomes for “plays”, the distribution of the number of outcomes and percentage in the line chart showed that there will be other factors that affect the outcomes along with the goal. For example, the type of the “plays”, or the actual location of the “plays” that planned to be shown might be one of the initial factors that decide the amount of money for the goal. This might explain the trend changes in the line chart. 
 - What are some limitations of this dataset?
-  
-  There are lots of factors that will affect the reliability of the data, which will further affect the analysis outputs. Depending on the different analysis     purpose, we might focus on different feather of the data. Here are some general limitations of the Kickstarter data.
-1.	In the Kickstarter data sheet, the values in the goal and pledged columns are in different currency. There is no standardized amount of month for both. When checking the outcomes based on the goal column, the output will be biased by the differences among each currency. 
-2.	There is no information of the actual strategy for each fundraising campaign. For example, the fundraising campaign was hold through social media, or used printed poster to be shown in public, or used combined strategies. The different strategy used throughout the fundraising campaign will affect the outcomes. 
+There are lots of factors that will affect the reliability of the data, which will further affect the analysis outputs. Depending on the different analysis purposes, we might focus on different feature of the data. Here are some general limitations of the Kickstarter data.
+1.	In the Kickstarter data sheet, the values in the goal and pledged columns are in different currency. There is no standardized amount of money for both. When checking the outcomes based on the goal column, the output will be biased by the differences among each currency. 
+2.	There is no information of the actual strategy for each fundraising campaign. For example, the fundraising campaign could be hold through social media, or used printed poster to be shown in public, or used combined strategies. The different strategy that has been used throughout the fundraising campaign will affect the outcomes. 
 3.	The demographic information of the target population in the Kickstarter data is unclear. Age group, gender, race and other demographic information will also affect the outcomes of the fundraising campaign.  
-
 - What are some other possible tables and/or graphs that we could create?
+Depending on the purpose of different analysis, there are few tables we could create.
+1.	Check the relationship between the fundraising timeline and outcomes. Here are the general steps:
+Convert the deadline in the Kickstarter data to a readable date value by using the same function as we used for converting the launch date. Then calculate the difference between the deadline line and launch date. This difference will be calculated in days. We could create a new table frame with Timeline in the first column which has 7 categories based on the difference of the days between deadline and launch date. Then count the number and percentage of the outcomes for “plays”.
+Table:
+
+![screenshot10](https://user-images.githubusercontent.com/79289806/109088049-a64ed900-76dc-11eb-9966-ebd90e4ef125.png)
+ 
+We can use this table to create two separate line charts for percentage and number of outcomes by timelines respectively:
+ 
+
+![screenshot11](https://user-images.githubusercontent.com/79289806/109088074-b5358b80-76dc-11eb-90b7-154c82afe4b9.png)
+![screenshot12](https://user-images.githubusercontent.com/79289806/109088081-b8307c00-76dc-11eb-855e-1c529aec5ed6.png)
+ 
+From the table and chart above, we could see that one to one and half month of the fundraising campaign timeline could lead to higher possibility of successful. 
+2.	Check the relationship between parent category and goal by outcomes. Here are the general steps:
+In the Kickstarter data, created a category variable “Category of Goal” based on the value of goal column. I created four categories (shown in the table below). Then created a PIVOT table, used country and outcomes as the filters, parent category as the rows, Category of Goal as the columns, and number of outcomes as the values.
+PIVOT Table:
+
+![screenshot13](https://user-images.githubusercontent.com/79289806/109088147-dc8c5880-76dc-11eb-9674-309b9d148159.png)
+ 
+We could filter the country and outcomes to better understand the relationship between each category of the fundraising campaign and the goals that will lead to different outcomes. 
+
 

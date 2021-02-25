@@ -88,8 +88,8 @@ This analysis is looking at the relationship between the goals for the fundraisi
 2.	There is no information of the actual strategy for each fundraising campaign. For example, the fundraising campaign could be hold through social media, or used printed poster to be shown in public, or used combined strategies. The different strategy that has been used throughout the fundraising campaign will affect the outcomes. 
 3.	The demographic information of the target population in the Kickstarter data is unclear. Age group, gender, race and other demographic information will also affect the outcomes of the fundraising campaign.  
 - What are some other possible tables and/or graphs that we could create?
-- 
-Depending on the purpose of different analysis, there are few tables we could create.
+
+  Depending on the purpose of different analysis, there are few tables we could create.
 1.	Check the relationship between the fundraising timeline and outcomes. Here are the general steps:
 Convert the deadline in the Kickstarter data to a readable date value by using the same function as we used for converting the launch date. Then calculate the difference between the deadline line and launch date. This difference will be calculated in days. We could create a new table frame with Timeline in the first column which has 7 categories based on the difference of the days between deadline and launch date. Then count the number and percentage of the outcomes for “plays”.
 Table:
@@ -99,15 +99,15 @@ Table:
 We can use this table to create two separate line charts for percentage and number of outcomes by timelines respectively:
  
 
-    ![screenshot11](https://user-images.githubusercontent.com/79289806/109088074-b5358b80-76dc-11eb-90b7-154c82afe4b9.png)
-    ![screenshot12](https://user-images.githubusercontent.com/79289806/109088081-b8307c00-76dc-11eb-855e-1c529aec5ed6.png)
+    ![screenshot11](https://user-images.githubusercontent.com/79289806/109091676-3859e000-76e3-11eb-8783-02682923b400.png)
+    
  
 From the table and chart above, we could see that one to one and half month of the fundraising campaign timeline could lead to higher possibility of successful. 
 2.	Check the relationship between parent category and goal by outcomes. Here are the general steps:
 In the Kickstarter data, created a category variable “Category of Goal” based on the value of goal column. I created four categories (shown in the table below). Then created a PIVOT table, used country and outcomes as the filters, parent category as the rows, Category of Goal as the columns, and number of outcomes as the values.
 PIVOT Table:
 
-    ![screenshot13](https://user-images.githubusercontent.com/79289806/109088147-dc8c5880-76dc-11eb-9674-309b9d148159.png)
+
  
 We could filter the country and outcomes to better understand the relationship between each category of the fundraising campaign and the goals that will lead to different outcomes. 
 
